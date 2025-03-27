@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"
+  publish = "public"
+
+[[redirects]]
+  from = "/images/*"
+  to = "/.netlify/functions/getImage/:splat"
+  status = 200
